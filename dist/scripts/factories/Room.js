@@ -1,11 +1,15 @@
 (function() {
   function Room($firebaseArray) {
     var ref = firebase.database().ref().child("rooms");
-    ref.orderByChild().endAt('room3');
-    console.log(ref);
     var rooms = $firebaseArray(ref);
-    console.log(ref);
-      
+    rooms.orderByChild().endAt('room3');
+    console.log(rooms);
+       
+    rooms.$add({ room5: "room5" }).then(function(ref) {
+    var id = ref.key;
+    console.log("new chat room added: " + id);
+    rooms.$indexFor(id); // returns location in the array
+    });
       
     return {
       all: rooms  

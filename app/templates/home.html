@@ -1,1 +1,16 @@
 <h1 ng-repeat="rooms">Home Page</h1>
+
+<div ng-controller="ModalCtrl as modal" class="modal">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">Create new chat room</h3>
+            <p class="modal-text" id="modal-text">Enter a room name</p>
+        </div>
+        <div class="modal-body" id="modal-body">
+                <form ng-repeat="rooms">Chat room name: <input type="text" name="ChatRoom" value=null></form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Create room</button>
+            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+        </div>
+    </script>
