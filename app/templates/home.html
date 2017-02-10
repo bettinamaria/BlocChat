@@ -2,3 +2,11 @@
 <ul>
     <li ng-repeat="room in rooms">{{room.name}}</li>
 </ul>
+
+<div class="modal">
+    <h3>Create New Room</h3>
+    <form>Enter a new room name:<input type="text" name="newroomname">
+    </form>
+    <button type="button" ng-click="cancel()">Cancel</button>
+    <button type="button" ng-click="confirm(roomInput)">Create Room!</button>
+</div>
