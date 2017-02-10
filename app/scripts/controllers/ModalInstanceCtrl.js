@@ -3,7 +3,7 @@
 
         // creates room from open modal
         $scope.confirm = function(roomInput){
-            Room.create(roomInput);
+            Room.addRoom(roomInput);
             $uibModalInstance.close(); 
             //standard close per uibmodal website
         };
@@ -17,5 +17,5 @@
 
     angular
         .module("blocChat")
-        .controller('ModalInstanceCtrl', ['$scope', '$uibModalInstance', 'Home', ModalInstanceCtrl]);
+        .controller('ModalInstanceCtrl', ['$scope', '$uibModalInstance', 'Room', ModalInstanceCtrl]);
 })();
