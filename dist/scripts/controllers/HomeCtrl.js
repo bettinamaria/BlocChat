@@ -4,7 +4,7 @@
 (function() {
      function HomeCtrl(Room, $scope, $uibModal) {
             $scope.rooms = Room.all;
-         $scope.open = function(){
+            $scope.open = function(){
             var modalInstance = $uibModal.open({
                 templateUrl: '/templates/createRoomModal.html',
                 controller: 'ModalInstanceCtrl',
@@ -13,6 +13,7 @@
             });   
         };
      }
+
  
      angular
          .module('blocChat')

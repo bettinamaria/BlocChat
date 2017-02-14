@@ -14,40 +14,47 @@ body {
 h3 {
     font-weight: bold;
 }
-.header {
+.modal-header {
     background-color: #E7B183;
     height: 80px;
 }
 
 .modal-body{
     font-weight: bold;
-    padding: 10px;
 }
 
 /* Sidebar */
 .sidebar {
-    background-color: transparent;
+    background-color: #c5d2db;
     position: fixed;
-    width: 25%;
+    width: 28%;
     height: 100%;
-    padding-left: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .sidebar button {
     background-color: #fffff;
     color: #df6e21;
     border: 1px solid #df6e21;
+    margin-top: 25px;
 }
+
 .sidebar button:hover {
     background-color:#c5919d;
     color: #e7b183;
     border: 1px solid #df6e21;
 }
-.room-list {
+.room-list ul{
     margin-top: 70px;
     font-size: 1.5rem;
-    padding: 5px;
+    padding-left: 0px;
     color: #df6e21;
     font-weight: bold;
+    list-style: none;
+}
+
+.room-list li {
+    padding-top: 15px;
 }
 
 /* Create Room Modal Window */
@@ -64,6 +71,14 @@ h3 {
     padding: 5px;
     border: 1px solid #DF6E21;
     border-radius: 5px;
+}
+
+.modal-footer {
+     border-top: none;
+}
+
+.modal-header {
+    border-bottom: none;
 }
 
 .btn {

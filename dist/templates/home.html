@@ -1,22 +1,28 @@
-<!-- Header -->
-<div class="container-fluid">
-    <div class="row header">
-         <div class="col-md-12 title-sec">
-                <section class="text-left">
-                    <h1>Bloc Chat</h1>
-                </section>
-        </div>
-    </div>
-</div>
-
 <!-- Sidebar -->
 <div class="sidebar">
-    <button class="btn btn-primary" type="button" ng-click="open()">Create New Room</button>
-</div>
-
-<!-- Listing of rooms -->
+    <button class="btn btn-primary pull-right" type="button" ng-click="open()">Create New Room</button>
+    <h1>Bloc Chat</h1>
+    
+    <!-- Listing of rooms -->
 <div class="room-list">
     <ul>
         <li ng-repeat="room in rooms">{{room.name}}</li>
+    </ul>
+</div>
+    
+</div>
+
+x
+
+<!-- Chat Message Area -->
+<div class="chat-room">
+    <h3>{{ currentRoom.name }} </h3>
+</div>
+<div>
+    <ul class="message-list">
+        <li ng-repeat="message in messages">
+            <h4>{{ message.username }}</h4>
+                <p>{{ message.content }}</p>
+        </li>
     </ul>
 </div>
