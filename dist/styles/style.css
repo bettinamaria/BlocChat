@@ -1,0 +1,85 @@
+/* Brand Color Selection
+#c5d2db
+#2096ba
+#e7b183
+#c5919d
+#df6e21
+*/
+
+html,
+body {
+    background-color: #E7B183;
+    color: #DF6E21;
+}
+h3 {
+    font-weight: bold;
+}
+.header {
+    background-color: #E7B183;
+    height: 80px;
+}
+
+.modal-body{
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: transparent;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    padding-left: 10%;
+}
+.sidebar button {
+    background-color: #fffff;
+    color: #df6e21;
+    border: 1px solid #df6e21;
+}
+.sidebar button:hover {
+    background-color:#c5919d;
+    color: #e7b183;
+    border: 1px solid #df6e21;
+}
+.room-list {
+    margin-top: 70px;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #df6e21;
+    font-weight: bold;
+}
+
+/* Create Room Modal Window */
+.modalstyles {
+    border-radius: 5px;
+    background-color:#E7B183;
+    color: #DF6E21;
+    border: 1px solid #DF6E21;
+}
+
+.modalstyles input {
+    width: 50%;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #DF6E21;
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    color: #DF6E21;
+    font-weight: bold;
+    border: 1px solid #DF6E21;
+}
+
+.cancel-btn:hover {
+    background-color: red;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #c5919d;
+}

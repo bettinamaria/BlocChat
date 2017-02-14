@@ -1,7 +1,13 @@
 <div class="modalstyles">
-    <h3>Create New Room</h3>
-    <form>Enter a new room name:<input type="text" ng-model="roomInput">
-    </form>
-    <button type="button" ng-click="cancel()">Cancel</button>
-    <button type="button" ng-click="confirm(roomInput)">Create Room!</button>
+    <div class="modal-header">
+        <h3>Create New Room</h3>
+    </div>
+    <div class="modal-body">
+        <form>Enter a new room name:<input type="text" ng-model="roomInput">
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default cancel-btn" type="button"  ng-click="cancel()">Cancel</button>
+        <button class="btn btn-primary" type="button" ng-click="confirm(roomInput)">Create Room!</button>
+    </div>
 </div>

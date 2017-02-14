@@ -1,6 +1,22 @@
-<h1>Home Page</h1>
-<button type="button" ng-click="open()">Create New Room</button>
-<ul>
-    <li ng-repeat="room in rooms">{{room.name}}</li>
-</ul>
+<!-- Header -->
+<div class="container-fluid">
+    <div class="row header">
+         <div class="col-md-12 title-sec">
+                <section class="text-left">
+                    <h1>Bloc Chat</h1>
+                </section>
+        </div>
+    </div>
+</div>
 
+<!-- Sidebar -->
+<div class="sidebar">
+    <button class="btn btn-primary" type="button" ng-click="open()">Create New Room</button>
+</div>
+
+<!-- Listing of rooms -->
+<div class="room-list">
+    <ul>
+        <li ng-repeat="room in rooms">{{room.name}}</li>
+    </ul>
+</div>
