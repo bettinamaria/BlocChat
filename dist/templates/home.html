@@ -12,17 +12,31 @@
     
 </div>
 
-x
-
 <!-- Chat Message Area -->
-<div class="chat-room">
-    <h3>{{ currentRoom.name }} </h3>
-</div>
-<div>
-    <ul class="message-list">
-        <li ng-repeat="message in messages">
-            <h4>{{ message.username }}</h4>
-                <p>{{ message.content }}</p>
-        </li>
-    </ul>
+<div class="container-fluid">  
+    <div class="chat-room">
+        <div>
+            <h3>{{ currentRoom.name }}</h3>
+        </div>
+        <div>
+            <ul class="message-list">
+                    <li ng-repeat="message in messages">
+                        <h4>{{ message.username }}</h4>
+                        <p>
+                            {{ message.content }}
+                        </p>
+                    </li>
+            </ul>
+        </div>
+<!-- Enter messages here -->
+    <div class="row message-row align-right">
+        <form class="form-inline">
+                <div class="form-group">
+                        <input type="text" size="100" class="form-control" placeholder="What you want to say..." ng-trim="true" ng-model="newMessage">
+                </div>
+                <div class="form-group">
+                        <button type="button" class="btn btn-success" ng-click="send(newMessage)">Send Message</button>
+                </div>
+        </form>
+    </div>
 </div>
