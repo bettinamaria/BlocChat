@@ -5,14 +5,15 @@
       
     return {
         send: function(newMessage, roomId){
+            console.log("Sending message from Message");
                 messages.$add({
-                    Bettina: newMessage,
-                    roomId: roomID,
-                    sentAt: timestamp
+                    content: newMessage,
+                    roomId: roomId,
+                    sentAt: firebase.database.ServerValue.TIMESTAMP
                 });
-        }
+        },
         getByRoomId: function (roomId) {
-        messages.orderByChild('roomId').isEqual(ref);
+            return $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
         }
     };
   }

@@ -32,6 +32,9 @@ h3 {
     padding-left: 2%;
     padding-right: 2%;
 }
+.main {
+    padding-left: 30%;
+}
 .sidebar button {
     background-color: #fffff;
     color: #df6e21;
