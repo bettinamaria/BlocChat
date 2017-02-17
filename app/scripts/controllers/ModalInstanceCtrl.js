@@ -10,7 +10,7 @@
 
         // closes modal window
         $scope.cancel = function(){
-            $uibModalInstance.dismiss('cancel'); //standard close per uibmodal website 
+        $uibModalInstance.dismiss('cancel'); //standard close per uibmodal website 
         };
 
     }
