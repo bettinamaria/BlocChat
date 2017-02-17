@@ -14,13 +14,12 @@
             });
     }
 
-
     function BlocChatCookies($cookies, $uibModal) {
         var currentUser = $cookies.get('blocChatCurrentUser');
         if (!currentUser || currentUser === ''){
             $uibModal.open({ //same modal used as in HomeCtrl
-                templateUrl: '/templates/createRoomModal.html',
-                controller: 'ModalInstanceCtrl',
+                templateUrl: '/templates/userNameModal.html',
+                controller: 'UserModalCtrl',
                 size: 'sm', //size used is small
                 backdrop: 'static' //disables closing of modal by clicking anything but the buttons
             });

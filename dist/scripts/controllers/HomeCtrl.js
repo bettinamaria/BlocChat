@@ -2,7 +2,7 @@
 * @desc Controller created to display Rooms in the view, associated with home template through $state. 
 */
 (function() {
-     function HomeCtrl(Room, Message, $scope, $uibModal) {
+     function HomeCtrl(Room, Message, $scope, $uibModal, $cookies) {
         $scope.rooms = Room.all;
         $scope.currentRoom = null;
         $scope.messages = [];
@@ -12,7 +12,7 @@
         };
         $scope.sendMessage = function(newMessage) {
             console.log("Sending message from HomCtrl");
-            Message.send(newMessage, $scope.currentRoom.$id);
+            Message.send(newMessage, $cookies.get('blocChatCurrentUser'), $scope.currentRoom.$id);
         };
         $scope.open = function(){
             var modalInstance = $uibModal.open({
@@ -28,5 +28,5 @@
  
      angular
          .module('blocChat')
-         .controller('HomeCtrl', ['Room', 'Message', '$scope', '$uibModal', HomeCtrl]);
+         .controller('HomeCtrl', ['Room', 'Message', '$scope', '$uibModal', '$cookies', HomeCtrl]);
 })();

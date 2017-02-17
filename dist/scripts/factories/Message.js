@@ -4,12 +4,13 @@
     var messages = $firebaseArray(ref);
       
     return {
-        send: function(newMessage, roomId){
+        send: function(newMessage, userName, roomId){
             console.log("Sending message from Message");
                 messages.$add({
                     content: newMessage,
                     roomId: roomId,
-                    sentAt: firebase.database.ServerValue.TIMESTAMP
+                    sentAt: firebase.database.ServerValue.TIMESTAMP,
+                    userName: userName
                 });
         },
         getByRoomId: function (roomId) {
