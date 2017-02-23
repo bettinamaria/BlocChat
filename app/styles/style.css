@@ -102,6 +102,35 @@ h3 {
     background-color: #c5919d;
 }
 
-.container-fluid{
-    background-color: red;
+.container.main{
+    background-color: #c5919d;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Chat Room MessageList */
+.modalstyles {
+    color: red;
+}
+
+.modal-header {
+    color: black;
+}
+
+.modal-body {
+    color: green;
+}
+
+.btn.btn-default {
+    color: cyan;
+}
+
+.chatroom {
+ height: 90vh; /*viewport height*/ 
+}
+
+#message-input {
+    height: 7vh;
+    position: fixed;
+    bottom: 0;
 }
