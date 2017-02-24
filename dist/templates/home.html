@@ -16,12 +16,12 @@
 <div class="container main" ng-show="currentRoom">  
     <div class="chat-room">
         <div>
-            <h3>{{ currentRoom.name }}</h3>
+            <h3 class="room-name">{{ currentRoom.name }}</h3>
         </div>
-        <div>
+        <div id="messages">
             <ul class="message-list">
                     <li ng-repeat="message in messages">
-                        <h4>{{ message.userName }}</h4>
+                        <h4 class="user-name">{{ message.userName }}</h4>
                         <p>
                             {{ message.content }}
                         </p>

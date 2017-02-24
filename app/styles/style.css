@@ -69,7 +69,7 @@ h3 {
 }
 
 .modalstyles input {
-    width: 50%;
+    width: 69%;
     margin-left: 10px;
     padding: 5px;
     border: 1px solid #DF6E21;
@@ -88,18 +88,22 @@ h3 {
     border-radius: 5px;
     color: #DF6E21;
     font-weight: bold;
-    border: 1px solid #DF6E21;
+    border: 1px solid #df6e21;
 }
 
-.cancel-btn:hover {
+.cancel-btn:hover, .cancel-btn:active {
     background-color: red;
+    color: #ffffff;
+    border: 1px solid #df6e21;
 }
 
 .btn-primary {
     background-color: #ffffff;
 }
-.btn-primary:hover {
-    background-color: #c5919d;
+.btn.btn-primary:hover, .btn.btn-primary:active {
+    background-color: bisque;
+    color: white;
+    border: 1px solid #df6e21;   
 }
 
 .container.main{
@@ -108,25 +112,50 @@ h3 {
     width: 100%;
 }
 
-/* Chat Room MessageList */
-.modalstyles {
-    color: red;
+.btn.btn-success {
+    color: #df6e21;
+    background-color: white;
+    border: 1px solid #df6e21;
 }
 
+.btn-success:hover, .btn-success:active {
+    background-color: bisque;
+}
+
+/* CreateUserName Modal*/
 .modal-header {
-    color: black;
-}
-
-.modal-body {
-    color: green;
+    color: #df6e21;
+    font-size: 5px;
 }
 
 .btn.btn-default {
-    color: cyan;
+    color: #df6e21;
 }
 
-.chatroom {
+/* ChatRoom MessageList */
+.chat-room {
  height: 90vh; /*viewport height*/ 
+}
+
+.room-name {
+    font-weight: bold;
+}
+#messages {
+    height:90%;
+    overflow-y: auto;
+}
+.message-list {
+    font-size: 14px;
+    color: #c5d2db;
+    list-style: square;
+    padding: 20px;
+    margin: 0;
+}
+
+.user-name {
+    color: #df6e21; 
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #message-input {
